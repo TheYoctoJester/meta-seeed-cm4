@@ -1,15 +1,17 @@
-INHERIT_append = " \
+require recipes-core/images/rpi-test-image.bb
+
+INHERIT:append = " \
 	populate_sdk_qt5 \
 	"
 
 SPLASH = "psplash-raspberrypi"
 
-IMAGE_FEATURES_append = " \
+IMAGE_FEATURES:append = " \
 	ssh-server-dropbear \
 	splash \
 	"
 
-IMAGE_INSTALL_append = " \
+IMAGE_INSTALL:append = " \
 	kernel-modules \
 	kernel-module-mipi-dsi \
 	kernel-module-ltr30x \
@@ -30,10 +32,10 @@ IMAGE_INSTALL_append = " \
 	python3-psutil \
 	python3-evdev \
 	evtest \
-	reterminalqt5example \
 	lvgl \
 	iperf3 \
 	i2c-tools \
 	util-linux \
 	"
 
+#	reterminalqt5example

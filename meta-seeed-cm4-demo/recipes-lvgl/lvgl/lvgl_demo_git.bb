@@ -13,22 +13,19 @@ SRC_URI = "\
 	file://0002-fix-the-TP-point-rotation-of-reTerminal.patch \
 	"
 
-DEPENDS += "libinput eudev"
+DEPENDS += "libinput udev"
 
 S = "${WORKDIR}/git"
 
-CFLAGS_prepend = "-I${S} "
+CFLAGS:prepend = "-I${S} "
 
-LDFLAGS_prepend = "-linput "
+LDFLAGS:prepend = "-linput "
 
 do_compile() {
 	oe_runmake
 }
 
-MY_DESTINATION1 = "/usr/bin"
 do_install() {
-	install -d ${D}${MY_DESTINATION1}
-	cp ${WORKDIR}/git/demo ${D}${MY_DESTINATION1}/lvgl_demo
+	install -d ${D}${bindir}
+	cp ${WORKDIR}/git/demo ${D}${bindir}/lvgl_demo
 }
-
-FILES_${PN} += "${MY_DESTINATION1}/*"

@@ -1,0 +1,40 @@
+This README file contains information on the contents of the meta-seeed-cm4-core layer.
+
+Please see the corresponding sections below for details.
+
+Dependencies
+============
+
+  URI: https://git.yoctoproject.org/git/poky
+  branch: honister
+
+  URI: git://git.openembedded.org/meta-openembedded
+  branch: honister
+
+  URI: git://git.yoctoproject.org/meta-raspberrypi
+  branch: honister
+
+Patches
+=======
+
+Please submit any patches against the meta-seeed-cm4-core layer to the xxxx mailing list (xxxx@zzzz.org)
+and cc: the maintainer:
+
+Maintainer: 953308023@qq.com
+
+Table of Contents
+=================
+
+  I. Adding the meta-seeed-cm4-core layer to your build
+ II. Misc
+
+
+I. Adding the meta-seeed-cm4-core layer to your build
+=================================================
+
+Run 'bitbake-layers add-layer meta-seeed-cm4-core'
+
+II. Misc
+========
+
+--- replace with specific information about the meta-seeed-cm4-core layer ---

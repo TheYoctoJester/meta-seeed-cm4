@@ -1,0 +1,29 @@
+header:
+  version: 11
+  includes:
+    - kas/reTerminal-base.yml
+
+distro: poky-mender
+
+repos:
+  meta-seeed-cm4:
+    layers:
+      meta-seeed-cm4-mender:
+
+  meta-mender:
+    url: https://github.com/theyoctojester/meta-mender.git
+    refspec: master-next
+    layers:
+      meta-mender-core:
+      meta-mender-demo:
+      meta-mender-raspberrypi:
+
+local_conf_header:
+  base: |
+    MENDER_ARTIFACT_NAME = "release-1"
+    MENDER_SERVER_URL = "https://hosted.mender.io"
+    MENDER_TENANT_TOKEN = ""
+    
+machine: seeed-reterminal-mender
+
+target: core-image-base

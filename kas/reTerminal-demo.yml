@@ -1,0 +1,19 @@
+header:
+  version: 11
+  includes:
+    - kas/reTerminal-base.yml
+
+distro: poky-seeed-demo
+
+repos:
+  meta-seeed-cm4:
+    layers:
+      meta-seeed-cm4-demo:
+
+  meta-qt5:
+    url: https://github.com/meta-qt5/meta-qt5.git
+    refspec: honister
+
+machine: seeed-reterminal
+
+target: reterminal-demo-image

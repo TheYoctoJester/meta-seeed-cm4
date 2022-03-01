@@ -1,0 +1,36 @@
+This README file contains information on the contents of the meta-seeed-cm4-mender layer.
+
+Please see the corresponding sections below for details.
+
+Dependencies
+============
+
+  meta-seeed-cm4-core
+
+  URI: https://github.com/theyoctojester/meta-mender.git
+  branch: master-next
+
+Patches
+=======
+
+Please submit any patches against the meta-seeed-cm4-mender layer to the xxxx mailing list (xxxx@zzzz.org)
+and cc: the maintainer:
+
+Maintainer: 953308023@qq.com
+
+Table of Contents
+=================
+
+  I. Adding the meta-seeed-cm4-mender layer to your build
+ II. Misc
+
+
+I. Adding the meta-seeed-cm4-mender layer to your build
+=================================================
+
+Run 'bitbake-layers add-layer meta-seeed-cm4-mender'
+
+II. Misc
+========
+
+--- replace with specific information about the meta-seeed-cm4-mender layer ---
